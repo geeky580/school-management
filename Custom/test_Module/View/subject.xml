@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="subject_tree" model="ir.ui.view">
+        <field name="name">subject.data.tree</field>
+        <field name="model">subject.data</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="subject_form" model="ir.ui.view">
+        <field name="name">subject.data.form</field>
+        <field name="model">subject.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button class="btn-primary" name="button_exam" string="Chode De" type="object" context="{'default_subject_exam_id' : active_id}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="student_ids"/>
+                        <field name="subject_id"/>
+                        <field name="create_exam_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="subject_action" model="ir.actions.act_window">
+        <field name="name">subjects</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">subject.data</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                create Your First Subject Data!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="subject_name"
+              name="Subject"
+              parent="student_name_root"
+              action="subject_action"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="subject_tree" model="ir.ui.view">
+        <field name="name">subject.data.tree</field>
+        <field name="priority">1</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="gautam"/>
+                <field name="teacher_id"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

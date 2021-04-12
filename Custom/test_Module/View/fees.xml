@@ -1,0 +1,55 @@
+<odoo>
+
+
+    <record id="fees_tree" model="ir.ui.view">
+        <field name="name">fees.data.tree</field>
+        <field name="model">fees.data</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="dues"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="fees_form" model="ir.ui.view">
+        <field name="name">fees.data.form</field>
+        <field name="model">fees.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="dues"/>
+                            <field name="classs"/>
+                            <field name="student_name"/>
+                            <field name="note"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="student_action1" model="ir.actions.act_window">
+        <field name="name">Fees</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">fees.data</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                create Your First Fees Data!
+            </p>
+        </field>
+    </record>
+
+
+
+    <menuitem id="fees_name"
+              name="fees--"
+              parent="student_name"
+              action="student_action1"
+              />
+
+
+</odoo>

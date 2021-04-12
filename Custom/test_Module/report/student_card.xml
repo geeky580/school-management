@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <template id="report_student">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <h2>Student Card</h2>
+                Student Name : <t t-esc='doc.name'/>
+                Age : <t t-esc='doc.age'/>
+                Gender : <t t-esc='doc.gender'/>
+                Note : <t t-esc='doc.note'/>
+                Class : <t t-esc='doc.classs_id'/>
+                Subject : <t t-esc='doc.subject_ids'/>
+            </t>
+        </t>
+    </template>
+
+
+    <template id="report_student1">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="test_Module.report_student"/>
+            </t>
+        </t>
+    </template>
+
+
+</odoo>
