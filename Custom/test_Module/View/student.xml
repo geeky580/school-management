@@ -64,7 +64,7 @@
               sequence="10"/>
 
     <menuitem id="student_name"
-              name="Chokre"
+              name="Menu"
               parent="student_name_root"
               action="student_action"
               sequence="10"/>

@@ -46,7 +46,7 @@
 
 
     <menuitem id="class_name"
-              name="Class_name"
+              name="Class Name"
               parent="student_name"
               action="student_action2"
               />

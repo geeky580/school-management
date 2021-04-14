@@ -46,7 +46,7 @@
 
 
     <menuitem id="fees_name"
-              name="fees--"
+              name="Fees"
               parent="student_name"
               action="student_action1"
               />
