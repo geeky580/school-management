@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name' : 'Test_Module',
+    'name' : 'Student Management System',
     'version' : '1.0',
     'summary': 'We are just trying to install first module',
     'sequence': -10,
@@ -19,7 +19,8 @@
         'View/teacher.xml',
         "wizards/create_exam.xml",
         'report/report.xml',
-        'report/student_card.xml'
+        'report/student_card.xml',
+
     ],
     'demo': [ ],
     'qweb': [ ],

@@ -12,7 +12,6 @@ class SubjectData(models.Model):
     student_ids = fields.Many2many('student.data','student_subject_relation','student_id','subject_id')
 
     subject_id = fields.One2many('exam.data', 'exam_ids')
-    create_exam_id = fields.One2many('create.exam', 'create_exam_id')
 
     def button_exam(self):
         return {

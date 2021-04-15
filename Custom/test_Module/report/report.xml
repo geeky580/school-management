@@ -10,12 +10,12 @@
     />
 
     <report
-            id="report_student_xlsx"
+            id="report_student_xls"
             string="Print In Excel"
             model="student.data"
             report_type="xlsx"
-            name="test_Module.report_student_xlsx"
-            file="test_Module.report_student_xlsx"
+            name="test_module.report_student_xls"
+            file="test_module.report_student_xls"
     />
 
 </odoo>

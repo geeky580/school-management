@@ -24,7 +24,7 @@
                         <field name="name"/>
                         <field name="student_ids"/>
                         <field name="subject_id"/>
-                        <field name="create_exam_id"/>
+
                     </group>
                 </sheet>
             </form>
